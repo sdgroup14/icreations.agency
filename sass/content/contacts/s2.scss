@@ -1,0 +1,253 @@
+.contacts-s2 {
+  background-color: $white;
+  .container {
+    padding-top: 47px;
+    padding-bottom: 201px;
+  }
+  .contacts-l-item-wrap {
+    display: inline-block;
+    margin: 0 auto;
+    min-width: 185px;
+  }
+  .contacts-l-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    .place-ico-block {
+      margin-bottom: 13px;
+    }
+    .contacts-ico {
+      width: 33px;
+      height: 32px;
+      float: left;
+    }
+    .contacts-place {
+      float: left;
+      color: $blue-d;
+      margin-left: 12px;
+      line-height: 16px;
+      letter-spacing: 0.3px;
+      @extend %px12;
+      text-align: left;
+    }
+    span {
+      display: block;
+      font-size: 0;
+      line-height: 0;
+    }
+    .phone {
+      font-weight: bold;
+      @extend %px12;
+      color: $blue-d;
+      line-height: 18px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .mail {
+      @extend %px12;
+      color: $blue-d;
+      line-height: 21px;
+      letter-spacing: 0.3px;
+    }
+    .contacts-calls {
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    .call,
+    .write {
+      width: 78px;
+      height: 32px;
+      float: left;
+      background-color: $blue-l;
+      border-radius: 4px;
+      color: $white-l;
+      @extend %px13;
+      line-height: 30px;
+      letter-spacing: 0.33px;
+    }
+    .call-ico,
+    .write-ico {
+      vertical-align: middle;
+      fill: $white;
+      margin-right: 7px;
+    }
+    .call-ico {
+      width: 19px;
+      height: 19px;
+    }
+    .write-ico {
+      fill: $white;
+      width: 21px;
+      height: 19.7px;
+    }
+    .write {
+      margin-left: 14px;
+    }
+  }
+  .tint {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    width: 100%;
+    height: 105%;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s linear;
+  }
+  .tint-active {
+    background-color: rgba(255, 255, 255, .7);
+    visibility: visible;
+    opacity: 1;
+  }
+  .hidden-form {
+    display: none;
+    width: 95%;
+    margin-top: 15px;
+  }
+  label {
+    position: relative;
+    display: block;
+    .inp-placeholder {
+      position: absolute;
+      display: block;
+      left: 5px;
+      top: 0;
+      @extend %px13;
+      line-height: 18px;
+      letter-spacing: 0.33px;
+      color: $blue-d;
+      z-index: 5;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+    }
+    .inp-placeholder-active {
+      top: -15px;
+      color: $blue-l;
+      font-size: 10px;
+    }
+  }
+  .inp {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $grey-l;
+    z-index: 1;
+    @extend %px13;
+    padding-left: 5px;
+    line-height: 18px;
+    letter-spacing: 0.33px;
+    color: $blue-d;
+  }
+  label:last-of-type .inp {
+    margin-bottom: 0px;
+  }
+  .form-btns {
+    margin-top: 10px;
+  }
+  .btn-cancel,
+  .btn-send {
+    background-color: $grey-l;
+    @extend %px13;
+    padding: 0 9px;
+    border-radius: 4px;
+    line-height: 30px;
+    letter-spacing: 0.33px;
+    color: $white-l;
+    &:hover {
+      background-color: $blue-l;
+    }
+  }
+  .btn-cancel {
+    float: left;
+  }
+  .btn-send {
+    float: right;
+  }
+}
+
+@mixin media_768_contacts_s2 {
+  .contacts-s2 {
+    .container {
+      padding: 43px 5.15% 5px;
+    }
+    .contacts-l-item-wrap {
+      display: block;
+      margin: 0;
+    }
+    .contacts-l-item {
+      float: none;
+      width: 100%;
+      margin-bottom: 38px;
+      .place-ico-block {
+        float: left;
+        margin-bottom: 0;
+        min-width: 35%;
+      }
+      .contacts-place {
+        float: left;
+      }
+      .phone {
+        line-height: 14px;
+      }
+      .contacts-calls {
+        margin-bottom: 0;
+        float: left;
+      }
+      .contacts-btns {
+        float: right;
+        margin-right: 10%;
+      }
+    }
+    .hidden-form {
+      display: none;
+      width: 230px;
+      margin-top: 25px;
+    }
+  }
+}
+
+@mixin media_320_contacts_s2 {
+  .contacts-s2 {
+    .container {
+      padding-top: 30px;
+      padding-bottom: 45px;
+      min-width: 320px;
+    }
+    .contacts-l-item-wrap {
+      display: block;
+      margin: 0 auto;
+      max-width: 320px;
+    }
+    .contacts-l-item {
+      float: none;
+      width: 100%;
+      margin-bottom: 50px;
+      .call,
+      .write {
+        width: 45%;
+      }
+      .write {
+        float: right;
+      }
+    }
+    .hidden-form {
+      display: none;
+      width: 100%;
+      margin-top: 25px;
+    }
+    .btn-cancel,
+    .btn-send {
+      padding: 0 35px;
+    }
+  }
+}
