@@ -1,6 +1,21 @@
 <section class="contacts-s2">
 	<div class="container">
-		<div class="contacts-list">
+		<h1>Write to us</h1>
+		<div class="form-block">
+			<form action="">
+				<label for=""><div class="inp-placeholder">name</div><input type="text" class="inp" name="" id=""></label>
+				<label for=""><div class="inp-placeholder">e-mail</div><input type="text" class="inp" name="" id=""></label>
+				<label for=""><div class="inp-placeholder">message</div><input type="text" class="inp" name="" id=""></label>
+				<div class="form-btns clearfix">
+					<button class="btn-send btn btn-default has-spinner" id="one">send message</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+
+<!-- <div class="contacts-list">
 			<div class="contacts-l-item clearfix">
 				<div class="contacts-l-item-wrap clearfix">
 					<div class="tint"></div>
@@ -53,15 +68,7 @@
 						</div>
 					</div>
 						<div class="hidden-form">
-							<form action="">
-								<label for=""><div class="inp-placeholder">name</div><input type="text" class="inp" name="" id=""></label>
-								<label for=""><div class="inp-placeholder">e-mail</div><input type="text" class="inp" name="" id=""></label>
-								<label for=""><div class="inp-placeholder">message</div><input type="text" class="inp" name="" id=""></label>
-								<div class="form-btns clearfix">
-									<button class="btn-cancel">cancel</button>
-									<button class="btn-send">send message</button>
-								</div>
-							</form>
+
 						</div>
 				</div>
 			</div>
@@ -129,6 +136,4 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</div> -->

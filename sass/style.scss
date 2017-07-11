@@ -70,8 +70,8 @@ body,
 }
 
 .global-hide {
-  transition: all .2s linear;
-  transform: scale(.7);
+  transition: all .17s ease-in;
+  transform: scale(.8);
   opacity: 0;
 }
 
