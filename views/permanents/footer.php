@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <div class="b-left">
+    <div class="b-left clearfix">
       <div class="wrapper clearfix">
         <div class="logo">
           <a href="">
@@ -41,11 +41,23 @@
               </svg>
             </li>
           </a>
+          <a class="s-item" href="">
+            <li>
+              <svg class="icon-box s-svg-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <use xlink:href="img/sprite.svg#write-footer"></use>
+              </svg>
+            </li>
+          </a>
+
         </ul>
         <p>© Iconic Creations Agency, 2017</p>
       </div>
     </div>
-    <div class="b-right">
+  </div>
+</footer>
+
+
+<!--     <div class="b-right">
       <div class="contacts clearfix">
         <div class="cont-item cont-item-1">
           <p class="place">NY, USA 10022 2nd Avenue, 1065</p>
@@ -68,6 +80,4 @@
           <p class="mail"><a href="mailto:praha@icreations.agency">praha@icreations.agency</a></p>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </div> -->

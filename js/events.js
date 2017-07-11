@@ -165,38 +165,39 @@ $('.close-gal').on('click', function() {
 
 // BTN PRELOADER CONTACT
 
-(function ($) {
-    $.fn.buttonLoader = function (action) {
-        var self = $(this);
-        if (action == 'start') {
-            if ($(self).attr("disabled") == "disabled") {
-                e.preventDefault();
-            }
-            $('.has-spinner').attr("disabled", "disabled");
-            $(self).attr('data-btn-text', $(self).text());
-            $(self).html('<span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>Loading');
-            $(self).addClass('active');
-        }
-        if (action == 'stop') {
-            $(self).html($(self).attr('data-btn-text'));
-            $(self).removeClass('active');
-            $('.has-spinner').removeAttr("disabled");
-        }
-    }
-})(jQuery);
+// (function ($) {
+//     $.fn.buttonLoader = function (action) {
+//         var self = $(this);
+//         if (action == 'start') {
+//             if ($(self).attr("disabled") == "disabled") {
+//                 e.preventDefault();
+//             }
+//             $('.has-spinner').attr("disabled", "disabled");
+//             $(self).attr('data-btn-text', $(self).text());
+//             $(self).html('<span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>Loading');
+//             $(self).addClass('active');
+//         }
+//         if (action == 'stop') {
+//             $(self).html($(self).attr('data-btn-text'));
+//             $(self).removeClass('active');
+//             $('.has-spinner').removeAttr("disabled");
+//         }
+//     }
+// })(jQuery);
 
 $(document).ready(function () {
-    
-
-});
-    $('.has-spinner').on('click', function (e) {
-      
+        $('.has-spinner').on('click', function (e) {
       e.preventDefault();
-        var btn = $(this);
-        $(btn).buttonLoader('start');
+        var btn = $('.btn-send-txt');
+        // $(btn).buttonLoader('start');
+        $('.loader').addClass('loader-active');
+        $(btn).text('');
         setTimeout(function () {
-            $(btn).buttonLoader('stop');
+            // $(btn).buttonLoader('stop');
+            $('.loader').removeClass('loader-active');
             $(btn).text('sucsess');
 
         }, 1000);
     });
+
+});

@@ -1,7 +1,7 @@
 .contacts-s2 {
   background-color: $white;
   padding-top: 48px;
-  padding-bottom: 55px;
+  padding-bottom: 62px;
   h1 {
     color: $blue-d;
     @extend %px18;
@@ -71,6 +71,7 @@
     background-color: $blue-l;
     @extend %px13;
     padding: 0 34px;
+    width: 157px;
     border-radius: 3px;
     line-height: 32px;
     letter-spacing: 0.33px;
@@ -78,6 +79,18 @@
     margin: 0 auto;
     &:hover {
       background-color: $blue-d;
+    }
+    span{
+      vertical-align: middle;
+    }
+    .loader {
+      display: none;
+      height: 32px;
+      line-height:32px;
+      vertical-align: middle;
+    }
+    .loader-active {
+      display: inline-block;
     }
   }
 
